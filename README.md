@@ -14,16 +14,22 @@ This project is just a fun experiment and not intended for widespread use. It’
 1. Clone the repo
    ```sh
    git clone https://github.com/c3met/url-shortener.git
-   ```
-2. Install NPM packages
+
+2. Enter env variables
+   ```js
+   DATABASE_URL="mongodb://root:prisma@localhost:27017/UrlEntry?authSource=admin"
+   APP_URL="http://localhost:5173/" 
+   ```   
+3. Install NPM packages
    ```sh
    npm install
    ```
-3. Start Docker
+4. Start Docker
    ```sh
    docker compose up -d
    ```
-4. Start Sveltekit
+5. Start Sveltekit
    ```sh
    npm run dev
    ```
+
